@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*
+Theme Name: Startup Responsive Landing page Template
+Version: 1.0
+Author: Surjith SM
+Author URI: http://themeforest.net/user/surjithctly
+*/
+
+
+/******************  Table of Contents  *****************************/
+
+/*
+
+1. GLOBAL STYLES
+2. HEADER
+3. HERO IMAGE
+4. FEATURES
+5. TESTIMONIALS
+6. PLANS AND PRICING
+7. FAQ
+8. FOOTER
+9. CUSTOM MEDIA QUERIES
+10. BLOG
+
+If you having trouble in editing css. please send a mail to support@surjithctly.in - 
+I will really help you
+
+*/
+
+/*========== 1. GLOBAL STYLES ==============*/
+
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	background:#FFF;
+	font-weight:300;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color:#94a3a8;
+}
+strong, b {
+	font-weight:600;
+}
+h1 {
+	font-size:50px;
+	line-height:60px;
+	margin:25px 0;
+}
+h2 {
+	font-size:40px;
+	font-weight:600;
+	margin:15px 0;
+}
+h3 {
+	font-size:20px;
+	margin:10px 0;
+	font-weight:600;
+}
+h4 {
+	font-size:20px;
+	margin:10px 0;
+}
+h5 {
+	font-size:24px;
+	font-weight:600;
+	margin:15px 0;
+	color: #384047;
+}
+h6 {
+	font-size:16px;
+	font-weight:600;
+	margin:10px 0;
+	color: #384047;
+}
+a {
+	color:#5173bd;
+}
+a:hover, a:focus {
+	color:#5173bd;
+
+}
+
+
+.form-control {
+	border-radius: 3px;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.input-lg {
+	height: 55px;
+}
+.btn-lg, .btn-group-lg > .btn {
+	padding: 10px 28px;
+	height: 52px;
+}
+
+ 
+
+/*========== 2. HEADER ==============*/
+
+.masthead {
+	position: relative;
+	padding: 80px 15px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	background-color: #6883cc;
+	background-image:url(../assets/header_bg_gradient.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+/* Boucing Arrow Animation */
+
+@keyframes arrowbounce {
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-moz-keyframes arrowbounce { /* Firefox */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-webkit-keyframes arrowbounce { /* Safari and Chrome */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-o-keyframes arrowbounce { /* Opera */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+.scrollto, .scrollto:hover {
+	margin:30px;
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	width:200px;
+	margin:0 auto;
+}
+.scrollto--arrow {
+	padding:10px;
+}
+.scrollto--arrow img {
+	animation: arrowbounce 1s alternate infinite;
+	-moz-animation: arrowbounce 1s alternate infinite; /* Firefox */
+	-webkit-animation: arrowbounce 1s alternate infinite; /* Safari and Chrome */
+	-o-animation: arrowbounce 1s alternate infinite; /* Opera */
+}
+/*========== 3. HERO IMAGE ==============*/
+
+.section-title {
+	text-align:center;
+	margin-top:60px;
+	margin-bottom:30px;
+}
+.section-title h2 {
+	color:#384047;
+}
+.section-title h4 {
+	color:#94a3a8;
+}
+.heroimg img, .clientlogo img {
+	max-width:100%;
+}
+
+
+
+/*==========9. CUSTOM MEDIA QUERIES==============*/
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 991px) {
+ h1 {
+font-size: 35px;
+line-height: 50px;
+margin: 15px 0;
+}
+ h2 {
+font-size: 35px;
+}
+ .testimonials [class*="col-"]:not(:first-child) {
+ margin-top: 40px;
+}
+ .planpricing [class*="col-"]:not(:first-child) {
+ margin-top: 30px;
+}
+ .breath {
+margin: 30px auto;
+}
+}
+ @media (max-width: 767px) {
+ h1 {
+font-size: 30px;
+line-height: 40px;
+}
+ h2 {
+font-size: 30px;
+line-height: 40px;
+}
+ .subscribe [class*="col-"]:not(:first-child) {
+ margin-top: 30px;
+}
+ .masthead {
+padding: 40px 15px;
+}
+}
+ @media (max-width: 480px) {
+	 /*Media Queries for smaller devices*/
+	 .masthead {
+	background-attachment: scroll;
+}
+
+}
+
+
+
+/*=== v1.1 ===*/
+
+ @media (max-device-width: 992px) {
+	 
+.masthead {
+background-size: cover;
+background-attachment: scroll;
+}
+	 
+ }
+ 
+ 
+/*=== v 2.0 ===*/
+
+
+.signup-block {
+	padding:20px;	
+	background:rgba(255,255,255,0.25);
+	border-radius:7px;
+	margin-bottom:25px;
+}
+
+.form-group.last {
+	margin-bottom:0;	
+}
+
+.multiple-btns .btn + .btn {
+	margin:10px;	
+}
+
+
+/*=== Vertical Signup ===*/
+
+.signup-v-layout .masthead {
+padding: 15px;
+}
+ 
+.signup-v-layout .logo {
+padding: 10px 0;
+}
+
+/*=== Signup video ===*/
+
+.signup-video .masthead {
+padding: 15px;
+}
+ 
+.signup-video .logo {
+padding: 10px 0;
+}
+
+
+/*=== Web App page ===*/
+
+.web-app .masthead {
+padding: 15px;
+}
+ 
+.web-app .logo {
+padding: 15px 0;
+}
+
+
+.web-app .masthead {
+	background-image:url(../assets/header_color_2.jpg);
+	padding-bottom:0;
+}
+
+.web-app .footercta {
+	background-image:url(../assets/footer_color_2.jpg);
+}
+
+
+
+/*=== Mob App page ===*/
+
+.mob-app .masthead {
+padding: 15px;
+}
+ 
+.mob-app .logo {
+padding: 15px 0;
+}
+
+
+.mob-app .masthead {
+	background-image:url(../assets/header_color_3.jpg);
+}
+
+.multiple-links a img {
+	margin:5px;	
+}
+
+.mob-app .footercta {
+	background-image:url(../assets/footer_color_3.jpg);
+}
+
+
+
