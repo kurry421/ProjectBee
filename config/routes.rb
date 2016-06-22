@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'services/services'
+
+  devise_for :users
   get 'welcome/homepage'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,4 +58,6 @@ root 'welcome#homepage'
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get "/:page" => "services#show"
 end

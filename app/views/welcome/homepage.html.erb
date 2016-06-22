@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/stylesheets/main.css" /> -->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -29,13 +29,14 @@
 		            <span class="icon-bar"></span>
 		          </button>
 		          
-		          <div class="navbar-brand navbar-left"><a href="#"><img src="assets/logo-small-alt.png"></a></div>        
+		          <div class="navbar-brand navbar-left"><a href="/"><img src="assets/logo-small-alt.png"></a></div>        
 
 		        </div>
 		        <div class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <!-- <li><a href="/login">login</a></li> -->
-		            <li><div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn btn-blue" href="/register">Sign up!</a></div></li>
+		            <li><%= link_to "About", "/services" %></li>
+		            <li><div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn btn-blue" href="/services">Sign up!</a></div></li>
 		          </ul>
 		        </div><!--/.navbar-collapse -->
 		      </div>
@@ -57,6 +58,8 @@
 							
 		    				<h1>Generate more <u><span data-typer-targets="Customers , Growth , Revenue"></span></u></h1><p> With <strong>Cross Marketing</strong> Partnerships</p></p>
 		    				</header>
+
+		    			
 					
 					<!-- Subscribe form -->
 
@@ -66,17 +69,14 @@
 
 						<div class="row">
 					      <div class="ccol-xs-10 col-xs-offset-3 col-sm-10 col-sm-offset-2 col-lg-10 col-lg-offset-2 subscribe">
-					        <form class="form-horizontal validate mc-field-group" role="form" id="subscribeForm mc-embedded-subscribe-form" action="//honeypod.us13.list-manage.com/subscribe/post?u=b342ac5e7a4d0ccc8c9d5b82e&amp;id=79a6fa293c" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+					        <form class="form-horizontal" role="form" id="gsheetcontactform" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 					          <div class="form-group">
 					            <div class="col-md-7 col-sm-6 col-sm-offset-0 col-md-offset-0">
-					              <input class="form-control input-lg email input-color" name="EMAIL" name="b_b342ac5e7a4d0ccc8c9d5b82e_79a6fa293c" type="email" id="mce-EMAIL" placeholder="Enter your email" data-validate="validate(required, email)" required="required" tabindex="-1" value="">
-					             
+					              <input id='email' name='email' type='email' placeholder="Enter Your Email">
 					            </div>
 					            <div class="col-xs-2 col-xs-2">
-					              <!-- <button type="submit" class="btn btn-success btn-xs button btn-blue clear">Free Trail</button> -->
-
-					              <input type="submit" value="Free Trial" name="subscribe" id="mc-embedded-subscribe" class="button btn-blue"></div>
-
+					            <!-- <button type="submit" class="btn btn-success btn-xs button btn-blue clear">Free Trail</button> -->
+					              <input id="success" type="submit" value="Free Trial" name="subscribe" class="button btn-blue"></div>
 					            </div>
 					          </div>
 					        </form>
@@ -143,7 +143,7 @@
 							</section>
 
 							<div class="col-md-2 col-xs-2 col-md-offset-4 col-xs-offset-1 button-cta">
-					              <button type="submit" class="btn btn-success btn-xs button btn-gray">Join For Free</button>
+					              <a href="services" button type="submit" class="btn btn-success btn-xs button btn-gray">Join For Free</a></button>
 					</section>
 
 		<!-- Benefit/Feature 1 -->
@@ -258,7 +258,7 @@
 						</header>
 						<footer>
 							<div class="col-md-2 col-xs-2 col-md-offset-4 col-xs-offset-1 button-cta">
-					              <button type="submit" class="btn btn-success btn-xs button btn-blue">Join For Free</button>
+					              <a href="services" button type="submit" class="btn btn-success btn-xs button btn-blue">Join For Free<a></button>
 					            </div>
 						</footer>
 
@@ -296,6 +296,10 @@
 				      $('[data-typer-targets]').typer();
 				    });
 				  </script> 
+
+				  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+				  <!-- Custom Theme JavaScript -->
+				  <script src='/assets/google-sheet.js'></script>
 
 				<!--============== SUBSCRIBE FORM =================--> 
 
