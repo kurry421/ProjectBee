@@ -1731,7 +1731,8 @@
 		background: #000000;
 		//border: solid 5px rgba(0,0,0,0); //pink border
 		border-color: #83d3c9;
-		color: #83d3c9;
+		color: #ffffff;
+		//text-color: #ffffff;
 		display: block;
 		padding: 0.75em;
 		text-decoration: none;
@@ -1754,24 +1755,24 @@
 
 	::-webkit-input-placeholder {
 		color: inherit;
-		//opacity: .2; //edited
+		opacity: .4; //edited
 		position: relative;
 		top: 3px;
 	}
 
 	:-moz-placeholder {
 		color: inherit;
-		//opacity: .2;
+		opacity: .4;
 	}
 
 	::-moz-placeholder {
 		color: inherit;
-		//opacity: .2;
+		opacity: .4;
 	}
 
 	:-ms-input-placeholder {
 		color: inherit;
-		//opacity: .2;
+		opacity: .4;
 	}
 
 	.formerize-placeholder {
