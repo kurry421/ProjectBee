@@ -97,6 +97,7 @@
 							<p>Through our platform, you will be able to create new partnerships and launch
 							<br />
 							mutually beneficial campaigns with just a few clicks.</p><br>
+							<!-- We believe marketing is a two way street – those who provide value, collaborate, and build meaningful relationships become the leaders and cultivate long term success and loyalty. With our approach, competition becomes irrelevant. -->
 						</header>
 
 		<!-- Benefits Checklist (Short) -->
@@ -112,7 +113,7 @@
 											<!-- <header> -->
 												<!-- <h3>This is Something</h3> -->
 											<!-- </header> -->
-											<p>Increase your Revenues.</p>
+											<header><p>Increase your Revenues.</p></header>
 										</section>
 
 									</div>
@@ -123,7 +124,7 @@
 											<!-- <header> -->
 											<!-- 	<h3>Also Something</h3> -->
 											<!-- </header> -->
-											<p>Reduce Customer Acquisition Costs</p>
+											<header><p>Reduce Customer Acquisition Costs</p></header>
 										</section>
 
 									</div>
@@ -134,7 +135,7 @@
 											<!-- <header>
 												<h3>Probably Something</h3>
 											</header> -->
-											<p>Grow your company with confidence</p>
+											<header><p>Grow your company with confidence</p></header>
 										</section>
 
 									</div>
@@ -142,7 +143,7 @@
 							
 							</section>
 
-							<div class="col-md-2 col-xs-2 col-md-offset-4 col-xs-offset-1 button-cta">
+							<div class="col-md-2 col-xs-2 col-sm-4 col-sm-offset-3 col-md-offset-4 button-cta">
 					              <a href="services" button type="submit" class="btn btn-success btn-xs button btn-gray">Join For Free</a></button>
 					</section>
 
@@ -257,7 +258,7 @@
 							<p></p>
 						</header>
 						<footer>
-							<div class="col-md-2 col-xs-2 col-md-offset-4 col-xs-offset-1 button-cta">
+							<div class="col-md-2 col-xs-2 col-sm-4 col-sm-offset-3 col-md-offset-4 col-xs-offset-1 button-cta">
 					              <a href="services" button type="submit" class="btn btn-success btn-xs button btn-blue">Join For Free<a></button>
 					            </div>
 						</footer>
@@ -325,7 +326,12 @@
 							return false;
 						});
 					});
-
+								<script type="text/javascript">
+								$(document).ready(function () {
+								$('#success').click(function (e) {
+								  e.preventDefault()
+								  $('#message').html('<div class="alert alert-success fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a success message</div>');
+								})</script>
 
 	</body>
 </html>
