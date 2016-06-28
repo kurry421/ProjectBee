@@ -1728,7 +1728,7 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #ffffff;
+		background: #ffffff !important; 
 		//border: solid 5px rgba(0,0,0,0); //pink border
 		border-color: #83d3c9;
 		color: #000000;
